@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Forecast Weather</title>
+</head>
+<body>
+    <h2> {{ data }} </h2>
+
+    <form class="form" autocomplete="off" spellcheck="false" method="POST">
+        <label>Latitude: <input id="latitude" name="lat" type="text"></label></br>
+        <label>Longitude: <input id="longitude" name="long" type="text"></label></br>
+        <label for="period">Select Period:</label>
+        <input name="period" id="period" list="periods"></br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <datalist id="periods">
+        <option>Hourly</option>
+        <option>Daily</option>
+    </datalist>
+
+</body>
+</html>
